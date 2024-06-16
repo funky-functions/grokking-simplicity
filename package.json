@@ -1,0 +1,12 @@
+{
+  "name": "grokking-simplicity",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/funky-functions/grokking-simplicity.git",
+  "author": "jong-k <fully.charged07@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^3.3.2"
+  }
+}
