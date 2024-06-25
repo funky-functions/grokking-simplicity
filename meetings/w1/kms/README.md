@@ -15,7 +15,7 @@
 예시) 시간에 대한 형태 or 데이터의 타입
 
 
-p40 연습 문제 쿠폰독에 대한 액션, 계산, 데이터 구분
+p40 [연습 문제] 쿠폰독에 대한 액션, 계산, 데이터 구분
 - 이메일 DB에 이메일 데이터 등록 - A
 - 이메일 추천하는 액션 - A
 - 이메일 DB에 추천한 이메일 카운트 update - A
@@ -28,3 +28,24 @@ p40 연습 문제 쿠폰독에 대한 액션, 계산, 데이터 구분
 액션은 가장 바깥에서 실행하는 것이 이상적이다
 내부에서부터 바깥으로
 데이터 > 계산 > 액션
+
+
+액션에서 계산 빼내기
+1. 계산 코드를 찾아서 빼낸다
+2. 새 함수에 암묵적 입력과 출력을 찾는다
+3. 암묵적 입력은 인자로 암묵적 출력은 리턴값으로 바꾼다.
+
+
+p79 [연습 문제]
+function update_tax_dom(){
+    set_tax_dom(shopping_cart_total * 0.10);
+}
+
+1. 암묵적 출력이랑 입력 빼기
+
+function update_tax_dom(){
+    set_tax_dom(calculate_cart_total(shopping_cart_total));
+}
+function calculate_cart_total(total){
+    retrun total * 0.10;
+}
