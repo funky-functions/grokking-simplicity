@@ -120,3 +120,42 @@ function refactored_add_item(
 ) {
   return [...cart, { name, price }];
 }
+
+// -------- 리팩토링: 액션에서 계산 빼내기3 --------
+
+// 장바구니 금액 합계에 10%의 세금을 계산
+// 계산으로 변경
+// TODO: 1. 세금만 계산하는 함수를 만들어서 분리
+// TODO: 2. 분리한 함수를 액션 -> 계산으로 변경
+function refactored_update_tax_dom(total_price: number) {
+  const tax = calc_tax(total_price);
+  // 세금 계산하고 이를 DOM에 반영
+  // set_tax_dom(tax);
+}
+
+// 세금 계산만 하는 함수
+function calc_tax(total_price: number) {
+  const TAX_RATE = 0.1;
+  return total_price * TAX_RATE;
+}
+
+// -------- 리팩토링: 액션에서 계산 빼내기4 --------
+
+// 구매 버튼들에 배송비 무료 아이콘을 추가할 수 있는 함수
+// TODO: 1. 배송비 무료 여부를 리턴하는 함수를 분리
+// TODO: 2. 분리한 함수를 액션 -> 계산으로 변경
+function refactored_update_shipping_icons() {
+  // const buy_buttons = get_buy_buttons_dom();
+  // buy_buttons.forEach((button) => {
+  //   const item = button.item;
+  //   if (is_free_shipping(item.price, shopping_cart_total)) {
+  //      button.show_free_shipping_icon();
+  //   } else {
+  //      button.hide_free_shipping_icon();
+  //   }
+  // });
+}
+
+function is_free_shipping(item_price: number, total_price: number) {
+  return item_price + total_price >= 20;
+}
