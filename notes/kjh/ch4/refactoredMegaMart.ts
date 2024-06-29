@@ -1,3 +1,5 @@
+/// TS2393: Duplicate function implementation. 에러 방지
+export {};
 interface ShoppingItem {
   name: string;
   price: number;
