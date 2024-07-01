@@ -1,3 +1,5 @@
+// TS2393: Duplicate function implementation. 에러 방지
+export {};
 // JS에서 데이터는 객체, 문자열 등으로 정의
 // 1. DB에서 가져온 구독자 데이터
 interface Subscriber {
