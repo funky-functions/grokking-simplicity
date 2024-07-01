@@ -9,6 +9,7 @@ interface ShoppingItem {
 }
 
 let shopping_cart: ShoppingItem[] = [];
+let shopping_cart_total = 0;
 
 function add_item(cart: ShoppingItem[], name: string, price: number) {
   return [...cart, { name, price }];
