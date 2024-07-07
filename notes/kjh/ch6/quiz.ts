@@ -1,3 +1,4 @@
+export {};
 // 연습문제 1. 아래 코드에 COW 적용하기
 interface Email {
   subject: string;
