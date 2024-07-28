@@ -6,13 +6,11 @@
 
 1. 두 액션이 순서대로 나타나면 같은 타임라인에 넣습니다
     1. 
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9b5a0686-6d4e-4e89-83d5-40115fd3a0d8/f47afb8f-7d48-4eb6-98ef-282594ed95a0/Untitled.png)
+    ![alt text](image.png)
     
 2. 두 액션이 동시에 실행되거나 순서를 예상할 수 없다면 분리된 타임라인에 넣습니다
     1. 
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9b5a0686-6d4e-4e89-83d5-40115fd3a0d8/e54475e6-cc6d-4444-93c6-ab0ab5e87924/Untitled.png)
+    ![alt text](image-1.png)
     
 
 ### 자세히 보면 놓칠 수 있는 액션 순서에 관한 두 가지 사실
